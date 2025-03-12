@@ -1,4 +1,8 @@
-export default function MovieCard() {
+import { Link } from "react-router-dom"
+
+export default function MovieCard(props) {
+
+    const { id, title, author, abstract, image } = props.movieProps;
 
     return (
 
@@ -8,16 +12,23 @@ export default function MovieCard() {
 
                 <div className="card_image">
 
-                    <img src="../public/img/debug_img.jpg" />
+                    <img src={image} alt={title} />
 
                 </div>
 
                 <div className="card_content">
 
-                    <h3>Movie Name</h3>
-                    <span>Director</span>
-                    <p>Description</p>
-                    <span className="button">See More</span>
+                    <h3>{title}</h3>
+
+                    <span>{author}</span>
+
+                    <p>{abstract}</p>
+
+                    <Link to={`details/${id}`} className="button">
+
+                        See more
+
+                    </Link>
 
                 </div>
 
