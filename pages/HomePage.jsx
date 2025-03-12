@@ -52,11 +52,7 @@ export default function HomePage() {
 
                 return (
 
-                    <div>
-
-                        <MovieCard movieProps={movie} key={movie.id} />
-
-                    </div>
+                    <MovieCard movieProps={movie} key={movie.id} />
 
                 )
 
@@ -68,7 +64,7 @@ export default function HomePage() {
 
     return (
 
-        <div className="movie-col">
+        <div className="movie-col" >
 
             {renderMovies()}
 

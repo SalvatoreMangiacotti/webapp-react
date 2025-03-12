@@ -11,7 +11,7 @@ export default function Header() {
 
                 <ul>
                     <Link to="/" className="link">Home</Link>
-                    <Link to="/details/1" className="link">Movie Details</Link>
+                    {/* <Link to="/details/:id" className="link">Movie Details</Link> */}
                 </ul>
 
             </nav>
