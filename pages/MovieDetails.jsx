@@ -15,7 +15,8 @@ import { Link, useParams } from "react-router-dom"
 
 // Components
 
-import MovieReview from "../movies-components/MovieReview";
+import MovieReview from "../movies-components/MovieReviews";
+import ReviewForm from "../movies-components/ReviewForm";
 
 
 
@@ -55,7 +56,6 @@ export default function MovieDetails() {
 
                 <MovieReview key={review.id} reviewProp={review} />
 
-
             ))
         }
 
@@ -85,6 +85,10 @@ export default function MovieDetails() {
 
                 {renderMovieReview()}
 
+            </section>
+
+            <section>
+                <ReviewForm movie_id={movie.id} reloadReviews={fetchMovie} />
             </section>
 
         </>

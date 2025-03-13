@@ -7,17 +7,17 @@ export default function MovieReview({ reviewProp }) {
 
             <div className="card_content">
 
-                <p>
-                    {text}
-                </p>
+                <h4>
+                    By: {name}
+                </h4>
 
                 <strong>
                     Vote: {vote}
                 </strong>
 
-                <span>
-                    By: {name}
-                </span>
+                <p>
+                    {text}
+                </p>
 
             </div>
         </div>

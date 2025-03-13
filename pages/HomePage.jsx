@@ -63,13 +63,15 @@ export default function HomePage() {
     }
 
     return (
+        <>
 
-        <div className="movies_container" >
+            <div className="movies_container" >
 
-            {renderMovies()}
+                {renderMovies()}
 
-        </div>
+            </div>
 
+        </>
     )
 
 }
