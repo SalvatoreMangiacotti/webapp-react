@@ -33,74 +33,7 @@ span {
 /* Global */
 
 .card_image {
+
   width: 400px;
-}
-
-
-/* Main */
-
-.movies_container {
-
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-
-}
-
-
-.movie_card {
-
-  background-color: lavender;
-  padding: 1rem;
-  min-width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-.movie_card .button {
-
-  background-color: white;
-  cursor: pointer;
-  padding: 10px;
-  text-align: center;
-  border-radius: 25px;
-
-}
-
-
-/* Header */
-
-header {
-
-  background-color: rgba(250, 250, 250, 0.950);
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.100);
-
-}
-
-
-header nav {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-header .link {
-
-  color: rgb(70, 70, 70);
-  font-size: 1.5rem;
-  text-decoration: none;
-  padding: 10px;
 
 }

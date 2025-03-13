@@ -15,7 +15,8 @@ import { Link, useParams } from "react-router-dom"
 
 // Components
 
-import MovieDetailsCard from "../movies-components/MovieDetailsCard"
+import MovieReview from "../movies-components/MovieReview";
+
 
 
 export default function MovieDetails() {
@@ -47,13 +48,12 @@ export default function MovieDetails() {
     useEffect(fetchMovie, [])
 
 
-    const renderDetails = () => {
-
+    const renderMovieReview = () => {
 
         {
-            return (movie.review?.map(review =>
+            return (movie.reviews?.map(review =>
 
-                <MovieDetailsCard key={review.id} detailsProp={review} />
+                <MovieReview key={review.id} reviewProp={review} />
 
 
             ))
@@ -61,25 +61,33 @@ export default function MovieDetails() {
 
     }
 
-
     return (
+        <>
 
-        <section className="movie_details" key={id}>
+            <section className="movie_details" key={id}>
 
-            <div className="card_image">
+                <div className="card_image">
 
-                <img src={movie.image} />
+                    <img src={movie.image} />
+
+                </div>
 
                 <h4>{movie.director}</h4>
 
                 <p>{movie.abstract}</p>
 
-            </div>
+            </section>
 
-            {renderDetails()}
 
-        </section>
+            <section className="reviews">
 
+                <h4>Our community reviews</h4>
+
+                {renderMovieReview()}
+
+            </section>
+
+        </>
     )
 
 }

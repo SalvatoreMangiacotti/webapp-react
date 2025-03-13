@@ -64,7 +64,7 @@ export default function HomePage() {
 
     return (
 
-        <div className="movie-col" >
+        <div className="movies_container" >
 
             {renderMovies()}
 

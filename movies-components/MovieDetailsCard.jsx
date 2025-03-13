@@ -1,6 +1,6 @@
 export default function MovieDetailsCard({ detailsProps }) {
 
-    const { image, name, author, vote } = detailsProps;
+    const { image, name, author, abstract } = detailsProps;
 
     return (
 
@@ -18,7 +18,7 @@ export default function MovieDetailsCard({ detailsProps }) {
 
                     <h2>{name}</h2>
                     <span>{author}</span>
-                    <p>{vote}</p>
+                    <p>{abstract}</p>
 
                 </div>
 
