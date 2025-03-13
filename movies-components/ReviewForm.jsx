@@ -32,9 +32,9 @@ export default function ReviewForm({ movie_id, reloadReviews }) {
 
         axios.post(`http://localhost:3000/api/movies/${movie_id}/reviews`, formData, { headers: { 'Content-Type': 'application/json' } })
 
-            .then(function (response) {
+            .then(function () {
 
-                setFormData(response.data)
+                setFormData(initialValue)
                 reloadReviews()
 
             })
