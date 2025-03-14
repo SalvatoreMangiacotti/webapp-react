@@ -72,16 +72,22 @@ export default function MovieDetails() {
 
                 </div>
 
-                <h4>{movie.director}</h4>
+                <div className="card_content">
 
-                <p>{movie.abstract}</p>
+                    <h2>{movie.title}</h2>
+
+                    <h2>{movie.director}</h2>
+
+                    <p>{movie.abstract}</p>
+
+                </div>
 
             </section>
 
 
             <section className="reviews">
 
-                <h4>Our community reviews</h4>
+                <h2>Our community reviews</h2>
 
                 {renderMovieReview()}
 

@@ -3,6 +3,7 @@ export default function MovieReview({ reviewProp }) {
     const { name, text, vote } = reviewProp
 
     return (
+
         <div className="movie_review_card">
 
             <div className="card_content">
@@ -20,6 +21,8 @@ export default function MovieReview({ reviewProp }) {
                 </p>
 
             </div>
+
         </div>
+
     )
 }

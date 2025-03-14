@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function MovieCard({ movieProps }) {
 
-    const { id, title, author, abstract, image } = movieProps;
+    const { id, title, director, abstract, image } = movieProps;
 
     return (
 
@@ -18,7 +18,7 @@ export default function MovieCard({ movieProps }) {
 
                 <h3>{title}</h3>
 
-                <span>{author}</span>
+                <span>{director}</span>
 
                 <p>{abstract}</p>
 

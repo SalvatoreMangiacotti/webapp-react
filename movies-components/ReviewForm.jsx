@@ -50,22 +50,71 @@ export default function ReviewForm({ movie_id, reloadReviews }) {
 
     return (
 
-        <form className="review_form" onSubmit={submitReview}>
+        <div className="reviews_container">
 
-            <label>Name</label>
-            <input type="text" name="name" className="form_input" value={formData.name} onChange={setUserInput} />
+            <form className="review_form"
 
-            <label>Review</label>
-            <textarea name="text" className="form_input" value={formData.text} onChange={setUserInput} ></textarea>
+                onSubmit={submitReview}
 
-            <label>Voto</label>
-            <input type="number" className="form_input" name="vote" min="1" max="5" value={formData.vote} onChange={setUserInput} />
+            >
 
-            <button type="submit" className="button">
-                Send
-            </button>
+                <label>Name</label>
 
-        </form>
+                <input
+
+                    type="text"
+
+                    name="name"
+
+                    className="form_input"
+
+                    value={formData.name}
+
+                    onChange={setUserInput}
+
+                />
+
+                <label>Review</label>
+
+                <textarea
+
+                    name="text"
+
+                    className="form_input"
+
+                    value={formData.text}
+
+                    onChange={setUserInput}
+                >
+                </textarea>
+
+                <label>Voto</label>
+
+                <input
+
+                    type="number"
+
+                    className="form_input"
+
+                    name="vote"
+
+                    min="1" max="5"
+
+                    value={formData.vote}
+
+                    onChange={setUserInput}
+
+                />
+
+                <button type="submit" className="button">
+
+                    Send
+
+                </button>
+
+            </form>
+
+        </div>
 
     )
 

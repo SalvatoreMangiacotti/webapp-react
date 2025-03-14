@@ -8,9 +8,9 @@ import axios from "axios"
 import { useState } from "react"
 
 
-// Links
+// Navigate
 
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 const initialData = {
@@ -70,77 +70,81 @@ export default function CreateMovie() {
 
     return (
 
-        <form className="review_form" onSubmit={handleSubmit}>
+        <div className="add_movie_container">
 
-            <label>Title:</label>
-            <input
+            <form className="add_movie_form" onSubmit={handleSubmit}>
 
-                name="title"
+                <label>Title:</label>
+                <input
 
-                type="text"
+                    name="title"
 
-                className="form_input"
+                    type="text"
 
-                value={formData.title}
+                    className="form_input"
 
-                onChange={setUserInput}
+                    value={formData.title}
 
-                required
+                    onChange={setUserInput}
 
-            />
+                    required
 
-            <label>Director:</label>
-            <input
+                />
 
-                name="director"
+                <label>Director:</label>
+                <input
 
-                type="text"
+                    name="director"
 
-                className="form_input"
+                    type="text"
 
-                value={formData.director}
+                    className="form_input"
 
-                onChange={setUserInput}
+                    value={formData.director}
 
-                required
+                    onChange={setUserInput}
 
-            />
+                    required
 
-            <label>Image:</label>
-            <input
+                />
 
-                name="image"
+                <label>Image:</label>
+                <input
 
-                type="file"
+                    name="image"
 
-                className="form_input"
+                    type="file"
 
-                onChange={setUserInput}
+                    className="form_input"
 
-                required
+                    onChange={setUserInput}
 
-            />
+                    required
 
-            <label>Abstract:</label>
-            <textarea
+                />
 
-                name="abstract"
+                <label>Abstract:</label>
+                <textarea
 
-                value={formData.abstract}
+                    name="abstract"
 
-                className="form_input"
+                    value={formData.abstract}
 
-                onChange={setUserInput}
+                    className="form_input"
 
-                required
+                    onChange={setUserInput}
 
-            ></textarea>
+                    required
 
-            <button type="submit" className="button">
-                Add a movie
-            </button>
+                ></textarea>
 
-        </form>
+                <button type="submit" className="button">
+                    Add a movie
+                </button>
+
+            </form>
+
+        </div>
 
     )
 
