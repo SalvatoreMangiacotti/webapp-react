@@ -12,7 +12,7 @@ import DefaultLayout from '../layouts/DefaultLayout'
 
 import HomePage from '../pages/HomePage'
 import MovieDetails from '../pages/MovieDetails'
-
+import CreateMovie from '../pages/CreateMovie'
 
 // Css
 
@@ -31,6 +31,7 @@ function App() {
 
           <Route index path="/" element={<HomePage />} />
           <Route path="/details/:id" element={<MovieDetails />} />
+          <Route path="/movies/create" element={<CreateMovie />} />
 
         </Route>
 
